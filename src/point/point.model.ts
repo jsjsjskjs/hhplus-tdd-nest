@@ -1,7 +1,7 @@
 export type UserPoint = {
-    id: number
-    point: number
-    updateMillis: number
+  id: number
+  point: number
+  updateMillis: number
 }
 
 /**
@@ -10,13 +10,14 @@ export type UserPoint = {
  * - USE : 사용
  */
 export enum TransactionType {
-    CHARGE, USE
+  CHARGE = "CHARGE",
+  USE = "USE",
 }
 
 export type PointHistory = {
-    id: number
-    userId: number
-    type: TransactionType
-    amount: number
-    timeMillis: number
+  id: number
+  userId: number
+  type: TransactionType
+  amount: number
+  timeMillis: number
 }
